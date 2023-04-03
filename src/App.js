@@ -6,11 +6,11 @@ const App = () => {
   return (
     <>
       <SectionWrapper
-        title="Introducing POKA"
-        description="Poka is a women's reproductive application designed with African women in mind by African women."
-        showBtn
+        title="POKA"
+        description="Women's reproductive APP designed with African women in mind by African women."
         mockupImg={assets.homeHero}
         banner="banner"
+        newsletter
       />
       <SectionWrapper
         title="Join"

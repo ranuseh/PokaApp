@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../styles/Global";
 import assets from "../assets";
 import Button from "./Button";
+import Newsletter from "./Newsletter";
 
 const SectionWrapper = ({
   title,
@@ -11,6 +12,7 @@ const SectionWrapper = ({
   mockupImg,
   banner,
   reverse,
+  newsletter,
 }) => {
   return (
     <div
@@ -43,6 +45,9 @@ const SectionWrapper = ({
           >
             {description}
           </p>
+          <div className="justify content-left">{newsletter && <Newsletter />}</div>
+
+          <div></div>
           {showBtn && (
             <Button
               assetUrl={assets.expo}
