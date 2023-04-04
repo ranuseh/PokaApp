@@ -1,14 +1,11 @@
 import React from "react";
 
 import styles from "../styles/Global";
-import assets from "../assets";
-import Button from "./Button";
 import Newsletter from "./Newsletter";
 
 const SectionWrapper = ({
   title,
   description,
-  showBtn,
   mockupImg,
   banner,
   reverse,
@@ -19,8 +16,7 @@ const SectionWrapper = ({
       className={`min-h-screen ${styles.section} 
       ${reverse ? styles.bgWhite : styles.bgPrimary} 
       ${banner}`}
-    >
-      <div
+    >      <div
         className={`flex items-center 
         ${reverse ? styles.boxReverseClass : styles.boxClass} 
         w-11/12 sm:w-full minmd:w-3/4`}
@@ -46,14 +42,6 @@ const SectionWrapper = ({
             {description}
           </p>
           <div className="justify content-left">{newsletter && <Newsletter />}</div>
-
-          <div></div>
-          {showBtn && (
-            <Button
-              assetUrl={assets.expo}
-              link="https://expo.dev/@ranuseh/PokaAppNew?serviceType=classic&distribution=expo-go"
-            />
-          )}
         </div>
         <div className={`flex-1 ${styles.flexCenter}p-8 sm:px-0`}>
           <img

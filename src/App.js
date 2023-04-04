@@ -1,24 +1,27 @@
-import { Download, Features, SectionWrapper } from './components';
-import assets from './assets';
-import styles from './styles/Global';
+import {
+  SectionWrapper,
+} from "./components";
+import assets from "./assets";
 
 const App = () => {
   return (
     <>
+
       <SectionWrapper
         title="POKA"
-        description="Women's reproductive APP designed with African women in mind by African women."
+        description="Women's reproductive app designed with African women in mind by African women."
         mockupImg={assets.homeHero}
         banner="banner"
+        showBtn
         newsletter
       />
       <SectionWrapper
-        title="Join"
+        title="Learn More"
         description="Join us on this journey to becoming your personal reproductive companion"
         mockupImg={assets.homeCards}
         reverse
       />
-      <Features />
+      {/* <Features />
       <SectionWrapper
         title="Deployment"
         description="Start Deplpoying now"
@@ -32,13 +35,7 @@ const App = () => {
         mockupImg={assets.mockup}
         banner="banner02"
       />
-      <Download />
-
-      <div className="px-4 py-2 justify-center items-center bg-primary flex-col text-center banner04">
-        <p className={`${styles.pText} ${styles.whiteText}`}>
-          Made with love by <span className="bold">JavaScript Mastery</span>
-        </p>
-      </div>
+      <Download /> */}
     </>
   );
 };
