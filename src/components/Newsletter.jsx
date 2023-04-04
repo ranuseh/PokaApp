@@ -1,36 +1,70 @@
 import React from "react";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
+import { Form, Input } from "semantic-ui-react";
+
+const SERVICE_ID = "default_service";
+const TEMPLATE_ID = "template_t99kx74";
+const USER_ID = "HxQYdJPEFHwbYug3c";
 
 const Newsletter = () => {
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent Successfully",
+        });
+      },
+      (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: "error",
+          title: "Ooops, something went wrong",
+          text: error.text,
+        });
+      }
+    );
+  };
+
   return (
     <div className="relative isolate overflow-hidden py-16 sm:py-10 lg:py-16">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto">
         <div className="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               COMING SOON
             </h2>
             <p className="mt-4 text-lg leading-8 text-white">
-              BE THE FIRST TO GET THE APP
+              REGISTER FOR THE WEBINAR
             </p>
             <div className="mt-6 flex max-w-md gap-x-4">
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                className="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-                placeholder="Your email"
-              />
-            </div>
-            <div className="mt-6">
-              <button
-                type="submit"
-                className="flex-none rounded-md bg-pink-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500"
-                onHandleClick="()"
-              >
-                GET EARLY ACCESS
-              </button>
+              <Form onSubmit={handleOnSubmit}>
+                <Form.Field
+                  id="form-input-control-email"
+                  control={Input}
+                  label="Email"
+                  name="user_email"
+                  placeholder="email"
+                  required
+                />
+                <Form.Field
+                  id="form-input-control-last-name"
+                  control={Input}
+                  label="Name"
+                  name="user_name"
+                  placeholder="name"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="flex-none rounded-md bg-pink-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500"
+                >
+                  REGISTER
+                </button>
+              </Form>
             </div>
           </div>
         </div>
