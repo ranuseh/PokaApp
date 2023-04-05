@@ -14,7 +14,7 @@ const App = () => {
         newsletter
         navBar
       />
-        <SectionWrapper
+      <SectionWrapper
         title="About"
         description="Women's reproductive app designed with African women in mind by African women. Join us on this journey to becoming your personal reproductive companion"
         mockupImg={assets.feature}

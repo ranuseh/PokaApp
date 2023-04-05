@@ -2,7 +2,7 @@ import assets from "../assets";
 
 function NavigationBar() {
   return (
-    <nav className="flex items-center justify-evenly flex-wrap bg-white-500">
+    <nav className="flex items-center justify-evenly flex-wrap bg-white sticky top-0 z-30">
       <div className="flex items-center flex-shrink-0 text-black p-2">
         <img
           className="fill-current"
