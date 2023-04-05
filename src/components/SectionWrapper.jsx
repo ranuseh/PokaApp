@@ -10,9 +10,10 @@ const SectionWrapper = ({
   banner,
   reverse,
   newsletter,
+  id,
 }) => {
   return (
-    <div
+    <div id={id}
       className={`min-h-screen ${styles.section} 
       ${reverse ? styles.bgWhite : styles.bgPrimary} 
       ${banner}`}

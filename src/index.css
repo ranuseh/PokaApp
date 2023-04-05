@@ -41,6 +41,15 @@
   width: 100%;
 }
 
+.banner05 {
+  background: url("./assets/banner05.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
 .fadeLeftMini {
   animation: fadeLeftMini 1s;
   animation-fill-mode: both;

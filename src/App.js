@@ -12,28 +12,37 @@ const App = () => {
         banner="banner"
         showBtn
         newsletter
+        navBar
       />
-      <SectionWrapper
-        title="Understanding Your Menstrual Cycle"
-        description="Women's reproductive app designed with African women in mind by African women. Join us on this journey to becoming your personal reproductive companion"
-        mockupImg={assets.homeCards}
-        reverse
-      />
-      {/* <Features /> */}
-      <SectionWrapper
-        title="Preconception and Fertility"
+        <SectionWrapper
+        title="About"
         description="Women's reproductive app designed with African women in mind by African women. Join us on this journey to becoming your personal reproductive companion"
         mockupImg={assets.feature}
-        banner="banner03"
+        reverse
+        id="about"
       />
       <SectionWrapper
-        title="Pregnancy and Childbirth"
+        title="Features"
+        description="Women's reproductive app designed with African women in mind by African women. Join us on this journey to becoming your personal reproductive companion"
+        mockupImg={assets.homeCards}
+        banner="banner03"
+        id="features"
+      />
+      <SectionWrapper
+        title="Blog"
+        description="Women's reproductive app designed with African women in mind by African women. Join us on this journey to becoming your personal reproductive companion"
+        mockupImg={assets.feature}
+        reverse
+        id="blog"
+      />
+      <SectionWrapper
+        title="App"
         description="Women's reproductive app designed with African women in mind by African women. Join us on this journey to becoming your personal reproductive companion"
         showBtn
         mockupImg={assets.mockup}
-        reverse
+        banner="banner05"
+        id="app"
       />
-      {/* <Download /> */}
     </>
   );
 };
