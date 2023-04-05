@@ -32,14 +32,14 @@ const SectionWrapper = ({
           <h1
             className={`
           ${reverse ? styles.blackText : styles.whiteText}
-          ${styles.h1Text}`}
+          ${styles.h1Text} mr-8`}
           >
             {title}
           </h1>
           <p
             className={`
           ${reverse ? styles.blackText : styles.whiteText}
-          ${styles.descriptionText}`}
+          ${styles.descriptionText} mr-8`}
           >
             {description}
           </p>
