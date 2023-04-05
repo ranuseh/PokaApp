@@ -15,7 +15,7 @@ const Newsletter = () => {
         console.log(result.text);
         Swal.fire({
           icon: "success",
-          title: "Message Sent Successfully",
+          title: "Registered!",
         });
       },
       (error) => {

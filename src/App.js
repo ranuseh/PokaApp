@@ -1,12 +1,13 @@
-import { SectionWrapper } from "./components";
+import { NavigationBar, SectionWrapper } from "./components";
 import assets from "./assets";
 
 const App = () => {
   return (
     <>
+      <NavigationBar />
       <SectionWrapper
         title="POKA"
-        description="Women's reproductive app designed with African women in mind by African women. Join us on this journey to becoming your personal reproductive companion"
+        description="Empowering women one cycle at a time"
         mockupImg={assets.homeHero}
         banner="banner"
         showBtn
