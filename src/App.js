@@ -13,6 +13,7 @@ const App = () => {
         showBtn
         newsletter
         navBar
+        id="home"
       />
       <SectionWrapper
         title="About"
