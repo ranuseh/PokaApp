@@ -3,7 +3,7 @@ import assets from "../assets";
 function NavigationBar() {
   return (
     <div className="navbar bg-white navbar-sticky">
-      <div className="navbar-start ml-8">
+      <div className="navbar-start ml-4">
         <a href="#home">
           <img width="40" height="40" src={assets.logoNew} alt="logo" />
         </a>
