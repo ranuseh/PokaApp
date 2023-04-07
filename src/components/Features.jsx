@@ -1,32 +1,68 @@
+import React from "react";
 
-import React from 'react';
-
-import assets from '../assets';
-import styles from '../styles/Global';
-
-const FeatureCard = ({ iconUrl, iconText }) =>  (
-  <div className={styles.featureCard}>
-    <img src={iconUrl} alt="icon" className={styles.featureImg} />
-    <p className={styles.featureText}>{iconText}</p>
-  </div>
-)
+import styles from "../styles/Global";
+import FeaturesCard from "./FeaturesCard";
 
 const Features = () => {
   return (
-    <div className={`${styles.section} ${styles.bgPrimary} banner03`}>
-      <div className={`${styles.subSection} flex-col text-center`}>
-        <div>
-          <h1 className={`${styles.h1Text} ${styles.whiteText}`}>Technologies</h1>
-          <p className={`${styles.pText} ${styles.whiteText}`}>ProNef has been developed using a cross-platform technology, React Native.</p>
-        </div>
-
-        <div className={styles.flexWrap}>
-          <FeatureCard iconUrl={assets.react} iconText="React Native" />
-          <FeatureCard iconUrl={assets.javascript} iconText="JavaScript" />
+    <section
+      id="features"
+      className={`min-h-screen ${styles.section} 
+      ${styles.bgPrimary} 
+      banner03 `}
+    >
+      <div
+        className={`flex items-center 
+        ${styles.boxClass} 
+        w-11/12 sm:w-full minmd:w-3/4`}
+      >
+        <div
+          className={`${styles.descDiv} 
+          ${" fadeLeftMini"}
+          ${styles.textLeft}
+        `}
+        >
+          <h1
+            className={`
+          ${styles.whiteText}
+          ${styles.h1Text} mr-8 mb-8`}
+          >
+            Features
+          </h1>
+          <div className="grid grid-row-2 grid-cols-2 gap-4">
+            <FeaturesCard
+              header="Period and Cycle Tracking"
+              text="Easy-to-use tool for tracking menstrual cycles, including information on cycle length, period duration, and symptoms."
+            />
+            <FeaturesCard
+              header="Menopause Education & Tracking"
+              text="Resources and tracking tools for women who are experiencing or approaching menopause, including educational articles and videos, symptom tracking, and expert advice.
+              "
+            />
+            <FeaturesCard
+              header="Exercises"
+              text="Personalized exercises designed to support women's reproductive health, including exercises to improve menstrual pain, strengthen pelvic muscles, and prepare for childbirth.
+              "
+            />
+            <FeaturesCard
+              header="Sustainable Choices"
+              text="Learn about eco-friendly menstrual products and sustainable choices for your period.
+              "
+            />
+            <FeaturesCard
+              header="Educational Resources"
+              text="A range of educational resources tailored specifically for African women, including articles, videos, and expert advice on reproductive health and wellness.
+              "
+            />
+            <FeaturesCard
+              header="Community"
+              text="Connect with other African women through the Poka community, sharing experiences, tips, and advice on reproductive health and wellness."
+            />
+          </div>
         </div>
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Features
+export default Features;

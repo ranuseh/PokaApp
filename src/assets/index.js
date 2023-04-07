@@ -7,8 +7,12 @@ import javascript from "./javascript.png";
 import react from "./react.png";
 import scene from "./scene.png";
 import mockup from "./mockup.png";
-import logoNew from "./logoNew.png"
+import logoNew from "./logoNew.png";
+import banner from "./banner.svg";
+import landingPic from "./landingPic.png";
+import landingPic1 from "./landingPic1.png";
 
+import lotus from "./lotus.png";
 
 export default {
   homeHero,
@@ -20,5 +24,9 @@ export default {
   react,
   scene,
   mockup,
-  logoNew
+  logoNew,
+  banner,
+  landingPic,
+  landingPic1,
+  lotus,
 };

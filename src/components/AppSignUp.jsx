@@ -4,10 +4,10 @@ import Swal from "sweetalert2";
 import { Form, Input } from "semantic-ui-react";
 
 const SERVICE_ID = "default_service";
-const TEMPLATE_ID = "template_t99kx74";
+const TEMPLATE_ID = "template_e9acoz2";
 const USER_ID = "HxQYdJPEFHwbYug3c";
 
-const Newsletter = () => {
+const AppSignUp = () => {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
@@ -31,29 +31,22 @@ const Newsletter = () => {
 
   return (
     <div className="relative isolate overflow-hidden py-16 sm:py-10 lg:py-16">
-      <div className="mx-auto">
-        <div className="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+      <div className="mx-auto flex">
+        <div className="mx-auto flex gap-x-8 gap-y-16 lg:max-w-none">
           <div className="max-w-xl lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              COMING SOON
+            <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
+              Coming soon
             </h2>
-            <p className="mt-4 text-lg leading-8 text-white">
-              REGISTER FOR THE WEBINAR
+            <p className="mt-4 text-lg leading-8 text-black">
+              REGISTER TO BE NOTIFIED
             </p>
-            <div className="mt-6 flex max-w-md gap-x-4">
+            <div>
               <Form onSubmit={handleOnSubmit}>
                 <Form.Field
                   id="form-input-control-email"
                   control={Input}
                   name="user_email"
                   placeholder="email"
-                  required
-                />
-                <Form.Field
-                  id="form-input-control-last-name"
-                  control={Input}
-                  name="user_name"
-                  placeholder="name"
                   required
                 />
                 <button
@@ -71,4 +64,4 @@ const Newsletter = () => {
   );
 };
 
-export default Newsletter;
+export default AppSignUp;
