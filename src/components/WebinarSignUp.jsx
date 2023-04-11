@@ -7,10 +7,11 @@ const SERVICE_ID = "default_service";
 const TEMPLATE_ID = "template_t99kx74";
 const USER_ID = "HxQYdJPEFHwbYug3c";
 
-const Newsletter = () => {
+const WebinarSignUp = () => {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+
       (result) => {
         console.log(result.text);
         Swal.fire({
@@ -71,4 +72,4 @@ const Newsletter = () => {
   );
 };
 
-export default Newsletter;
+export default WebinarSignUp;

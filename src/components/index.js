@@ -1,7 +1,6 @@
 import Features from "./Features";
-import Download from "./Download";
 import SectionWrapper from "./SectionWrapper";
-import Newsletter from "./Newsletter";
+import WebinarSignUp from "./WebinarSignUp";
 import NavigationBar from "./NavigationBar";
 import Landing from "./Landing";
 import About from "./About";
@@ -12,9 +11,8 @@ import FeaturesCard from "./FeaturesCard";
 
 export {
   Features,
-  Download,
   SectionWrapper,
-  Newsletter,
+  WebinarSignUp,
   NavigationBar,
   Landing,
   About,

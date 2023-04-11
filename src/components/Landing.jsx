@@ -1,7 +1,7 @@
 import React from "react";
 import assets from "../assets";
 import styles from "../styles/Global";
-import Newsletter from "./Newsletter";
+import WebinarSignUp from "./WebinarSignUp";
 
 const Landing = () => {
   return (
@@ -37,7 +37,7 @@ const Landing = () => {
             Empowering women one cycle at a time
           </p>
           <div className="justify content-left">
-            <Newsletter />
+            <WebinarSignUp />
           </div>
         </div>
         <div className={`flex-1 ${styles.flexCenter}p-8 sm:px-0`}>

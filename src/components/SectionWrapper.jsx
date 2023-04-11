@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "../styles/Global";
-import Newsletter from "./Newsletter";
+import WebinarSignUp from "./WebinarSignUp";
 
 const SectionWrapper = ({
   title,
@@ -44,7 +44,7 @@ const SectionWrapper = ({
             {description}
           </p>
           <div className="justify content-left">
-            {newsletter && <Newsletter />}
+            {newsletter && <WebinarSignUp />}
           </div>
         </div>
         <div className={`flex-1 ${styles.flexCenter}p-8 sm:px-0`}>
