@@ -7,7 +7,7 @@ const Features = () => {
   return (
     <section
       id="features"
-      className={`min-h-screen ${styles.section} 
+      className={`${styles.section} pb-20
       ${styles.bgPrimary} 
       banner03 `}
     >
@@ -18,18 +18,17 @@ const Features = () => {
       >
         <div
           className={`${styles.descDiv} 
-          ${" fadeLeftMini"}
           ${styles.textLeft}
         `}
         >
           <h1
             className={`
-          ${styles.whiteText}
+            text-purple-950
           ${styles.h1Text} mr-8 mb-8`}
           >
             Features
           </h1>
-          <div className="grid grid-row-2 grid-cols-2 gap-4">
+          <div className="grid gap-x-24 gap-y-24 sm:grid-cols-1 md:grid-cols-2 grid-cols-3">
             <FeaturesCard
               header="Period and Cycle Tracking"
               text="Easy-to-use tool for tracking menstrual cycles, including information on cycle length, period duration, and symptoms."

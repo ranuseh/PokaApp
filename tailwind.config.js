@@ -16,6 +16,9 @@ module.exports = {
         13: "1.3",
         16: "1.6",
       },
+      scale: {
+        mirror: "-1",
+      },
     },
     screens: {
       lg: { max: "1800px" },
@@ -26,7 +29,7 @@ module.exports = {
       minlg: "2100px",
     },
     fontFamily: {
-      IBMPlex: ["IBM Plex Sans", "sans-serif"],
+      Barlow:['Barlow', "sans-serif"]
     },
   },
   plugins: [require("rippleui")],

@@ -1,5 +1,4 @@
 import React from "react";
-import assets from "../assets";
 
 import styles from "../styles/Global";
 import AppSignUp from "./AppSignUp";
@@ -8,40 +7,26 @@ const AppPage = () => {
   return (
     <div
       id="app"
-      className={`min-h-screen ${styles.section} 
+      className={`flex justify-center items-center
           ${styles.bgWhite}`}
     >
       <div
         className={`flex items-center 
-            ${styles.boxReverseClass} 
-            w-11/12 sm:w-full minmd:w-3/4`}
+            w-11/12 minmd:w-3/4 py-20`}
       >
         <div
-          className={`${styles.descDiv} 
-              ${" fadeRightMini"}
-              ${styles.textRight}
-              items-end
+          className={`flex-1 w-full flex justify-start flex-col
+              items-center
             `}
         >
           <h1
             className={`
-              ${styles.blackText}
-              ${styles.h1Text} mr-8`}
+            text-purple-950
+            font-bold font-Barlow text-9xl sm:text-4xl minmd:text-6xl minlg:text-8xl leading-12 minmd:leading-13`}
           >
-            App
+            Coming Soon
           </h1>
-          <div className="justify content-left">
-            <AppSignUp />
-          </div>
-        </div>
-        <div className={`flex-1 ${styles.flexCenter}p-8 sm:px-0`}>
-          <img
-            src={assets.landingPic1}
-            alt="mockup"
-            className={`
-               ${" fadeLeftMini"}
-              ${styles.sectionImg}`}
-          />
+          <AppSignUp />
         </div>
       </div>
     </div>

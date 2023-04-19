@@ -7,7 +7,7 @@ const Landing = () => {
   return (
     <section
       id="home"
-      className={`min-h-screen ${styles.section} 
+      className={`${styles.section} 
       ${styles.bgPrimary} 
       banner03`}
     >
@@ -19,36 +19,33 @@ const Landing = () => {
         <div
           className={`${styles.descDiv} 
           ${" fadeLeftMini"}
-          ${styles.textLeft}
+          ${styles.textLeft} flex
         `}
         >
           <h1
             className={`
-          ${styles.whiteText}
-          ${styles.h1Text} mr-8`}
+            text-purple-950
+          ${styles.h2Text} mr-8`}
           >
-            POKA
+            Empowering <b>women</b>
           </h1>
-          <p
+          <h1
             className={`
-          ${styles.whiteText}
-          ${styles.descriptionText} mr-8`}
+            text-purple-950
+          ${styles.h2Text} mr-8`}
           >
-            Empowering women one cycle at a time
-          </p>
+            one cycle at a time
+          </h1>
           <div className="justify content-left">
             <WebinarSignUp />
           </div>
         </div>
-        <div className={`flex-1 ${styles.flexCenter}p-8 sm:px-0`}>
+        <div className={`flex-1 ${styles.flexCenter}`}>
           <img
-            width="40"
-            height="40"
             src={assets.landingPic}
             alt="mockup"
-            className={`
-           ${"fadeRightMini"}
-          ${styles.sectionImg}`}
+            className={`  
+          ${styles.sectionImg} scale-x-mirror`}
           />
         </div>
       </div>

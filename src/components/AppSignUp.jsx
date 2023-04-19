@@ -30,37 +30,30 @@ const AppSignUp = () => {
   };
 
   return (
-    <div className="relative isolate overflow-hidden py-16 sm:py-10 lg:py-16">
-      <div className="mx-auto flex">
-        <div className="mx-auto flex gap-x-8 gap-y-16 lg:max-w-none">
-          <div className="max-w-xl lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
-              Coming soon
-            </h2>
-            <p className="mt-4 text-lg leading-8 text-black">
-              REGISTER TO BE NOTIFIED
-            </p>
-            <div>
-              <Form onSubmit={handleOnSubmit}>
-                <Form.Field
+    <>
+      <p className="mt-4 text-lg leading-8 text-purple-950">
+        Your personal reproductive health companion
+      </p>
+      <div>
+        <Form onSubmit={handleOnSubmit} className="pr-24">
+          <Input action="Submit" placeholder="Email" />
+          {/* <Form.Field
                   id="form-input-control-email"
                   control={Input}
                   name="user_email"
-                  placeholder="email"
+                  placeholder="Please enter your email address"
                   required
-                />
-                <button
-                  type="submit"
-                  className="flex-none rounded-md bg-violet-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-violet-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500"
-                >
-                  REGISTER
-                </button>
-              </Form>
-            </div>
-          </div>
-        </div>
+                /> */}
+        </Form>
       </div>
-    </div>
+
+      <h1
+        className={`
+            text-purple-950`}
+      >
+        Notify me when app is launched
+      </h1>
+    </>
   );
 };
 
