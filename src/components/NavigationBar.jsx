@@ -42,7 +42,7 @@ function NavigationBar() {
         </a>
         <a
           href="#app"
-          className=" navbar-item text-sm flex-none rounded-full bg-pink text-purple shadow-sm hover:bg-pink lg:ml-6 md:ml-4 sm:ml-0"
+          className=" navbar-item text-sm flex-none rounded-full bg-pink text-purple font-semibold shadow-sm hover:bg-pink lg:ml-6 md:ml-4 sm:ml-0"
         >
         <button> Download App</button>
         </a>
