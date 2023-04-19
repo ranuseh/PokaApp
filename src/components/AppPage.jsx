@@ -21,8 +21,8 @@ const AppPage = () => {
         >
           <h1
             className={`
-            text-purple-950
-            font-bold font-Barlow text-9xl sm:text-4xl minmd:text-6xl minlg:text-8xl leading-12 minmd:leading-13`}
+            text-purple
+            font-bold italic font-Barlow text-9xl sm:text-4xl minmd:text-6xl minlg:text-8xl leading-12 minmd:leading-13`}
           >
             Coming Soon
           </h1>

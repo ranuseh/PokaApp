@@ -33,8 +33,8 @@ const WebinarSignUp = () => {
   return (
     <div className="relative isolate overflow-hidden py-16 sm:py-10 lg:py-16">
       <div className="mx-auto">
-        <div className="mx-auto flex">
-          <div className="max-w-xl lg:max-w-lg">
+        <div className="mx-auto flex flex-col lg:flex-row">
+          <div className="max-w-xl lg:max-w-lg lg:mr-8">
             <p className="text-xl text-white w-80">
               Join us for a free self care webinar
             </p>
@@ -57,7 +57,7 @@ const WebinarSignUp = () => {
                 />
                 <button
                   type="submit"
-                  className="flex-none rounded-md bg-purple-300 w-80 h-12 px-3.5 py-2.5 text-sm font-semibold text-purple-950 shadow-sm hover:bg-violet-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500"
+                  className="flex-none rounded-md bg-pink w-80 h-12 px-3.5 py-2.5 text-sm font-semibold text-purple shadow-sm hover:bg-violet-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500"
                 >
                   Register here
                 </button>

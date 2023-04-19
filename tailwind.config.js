@@ -10,6 +10,8 @@ module.exports = {
         lightBlue: "#E1F6FE",
         lightPink: "#FDEEDC",
         lightGreen: "#E1FDE2",
+        purple:"#592168",
+        pink:"#E7C7EC"
       },
       lineHeight: {
         12: "1.2",

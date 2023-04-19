@@ -11,31 +11,40 @@ function NavigationBar() {
               height="40"
               src={assets.logoNew}
               alt="logo"
-              className="lg:ml-64 md:ml-8 sm:ml-8"
+              className="lg:ml-64 md:ml-8 sm:ml-6"
             />
           </a>
-          <b className="text-purple-950 lg:ml-2 md:ml-8 sm:ml-10 sm:mr-8">
+          <p className="text-purple lg:ml-1 md:ml-6 sm:ml-8 sm:mr-7 font-bold text-base">
             POKA
-          </b>
+          </p>
         </div>
       </div>
-      <div className="navbar-end lg:mr-64 md:mr-16 sm:mr-0 ml:10">
-        <a className="navbar-item text-purple-950 text-l" href="#home">
+      <div className="navbar-end lg:mr-64 md:mr-16 sm:mr-0">
+        <a
+          className="navbar-item text-purple text-sm lg:ml-6 md:ml-4 sm:ml-0"
+          href="#home"
+        >
           Home
         </a>
 
-        <a className="navbar-item text-purple-950 text-l" href="#about">
+        <a
+          className="navbar-item text-purple text-sm lg:ml-6 md:ml-4 sm:ml-0"
+          href="#about"
+        >
           About
         </a>
 
-        <a className="navbar-item text-purple-950 text-l" href="#features">
+        <a
+          className="navbar-item text-purple text-sm lg:ml-6 md:ml-4 sm:ml-0"
+          href="#features"
+        >
           Features
         </a>
         <a
           href="#app"
-          className=" navbar-item text-purple-950 text-l flex-none rounded-full bg-purple-300 text-sm font-semibold text-purple-950 shadow-sm hover:bg-violet-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500"
+          className=" navbar-item text-sm flex-none rounded-full bg-pink text-purple shadow-sm hover:bg-pink lg:ml-6 md:ml-4 sm:ml-0"
         >
-          <button>Download App</button>
+        <button> Download App</button>
         </a>
       </div>
     </div>
