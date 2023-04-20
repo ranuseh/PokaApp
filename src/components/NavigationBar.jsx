@@ -9,12 +9,12 @@ function NavigationBar() {
             <img
               width="40"
               height="40"
-              src={assets.logoNew}
+              src={assets.poka}
               alt="logo"
               className="lg:ml-64 md:ml-8 sm:ml-6"
             />
           </a>
-          <p className="text-purple lg:ml-1 md:ml-6 sm:ml-8 sm:mr-7 font-bold text-base">
+          <p className="text-purple lg:ml-1 md:ml-6 sm:ml-7 sm:mr-7 font-bold text-base">
             POKA
           </p>
         </div>
@@ -44,7 +44,7 @@ function NavigationBar() {
           href="#app"
           className=" navbar-item text-sm flex-none rounded-full bg-pink text-purple font-semibold shadow-sm hover:bg-pink lg:ml-6 md:ml-4 sm:ml-0"
         >
-        <button> Download App</button>
+          <button> Download App</button>
         </a>
       </div>
     </div>

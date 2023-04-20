@@ -15,7 +15,7 @@ const Features = () => {
     w-11/12 sm:w-full minmd:w-3/4`}
       >
         <div
-          className={`flex-1 w-full flex justify-start flex-col md:mb-10 lg:ml-52 sm:ml-0 md:ml-5 
+          className={`flex-1 w-full flex justify-start flex-col md:mb-10 lg:ml-44 sm:ml-0 md:ml-5 
       text-left
     `}
         >
@@ -26,7 +26,7 @@ const Features = () => {
           >
             Features
           </h1>
-          <div className="grid gap-x-24 gap-y-24 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-x-16 gap-y-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <FeaturesCard
               header="Period and Cycle Tracking"
               text="Easy-to-use tool for tracking menstrual cycles, including information on cycle length, period duration, and symptoms."
