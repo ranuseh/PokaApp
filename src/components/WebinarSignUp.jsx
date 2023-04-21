@@ -11,7 +11,6 @@ const WebinarSignUp = () => {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
-
       (result) => {
         console.log(result.text);
         Swal.fire({
@@ -40,21 +39,18 @@ const WebinarSignUp = () => {
             </p>
             <div className="mt-4 flex max-w-md ">
               <Form onSubmit={handleOnSubmit}>
-                <Form.Field
-                  id="form-input-control-last-name"
-                  control={Input}
-                  name="user_name"
-                  placeholder="NAME"
-                  required
-                  className="w-80"
-                />
-                <Form.Field
-                  id="form-input-control-email"
-                  control={Input}
-                  name="user_email"
-                  placeholder="EMAIL"
-                  required
-                />
+                <div className="flex flex-col">
+                  <Input
+                    name="user_name"
+                    className="form__name pb-3"
+                    placeholder="NAME"
+                  />
+                  <Input
+                    name="user_email"
+                    className="form__email pb-3"
+                    placeholder="EMAIL"
+                  />
+                </div>
                 <button
                   type="submit"
                   className="flex-none rounded-md bg-pink w-80 h-12 px-3.5 py-2.5 text-sm font-semibold text-purple shadow-sm hover:bg-violet-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500"
