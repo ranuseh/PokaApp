@@ -31,9 +31,6 @@ const AppSignUp = () => {
 
   return (
     <>
-      <p className="mt-4 text-lg leading-8 text-purple font-bold pb-5 ">
-        Your personal reproductive health companion
-      </p>
       <div>
         <Form onSubmit={handleOnSubmit} className="pr-24">
           <Input
@@ -46,9 +43,9 @@ const AppSignUp = () => {
       </div>
       <h1
         className={`
-            text-purple`}
+            text-purple pt-2`}
       >
-        Notify me when app is launched
+        For African women by African women B E T A Launch -- coming soon
       </h1>
     </>
   );
